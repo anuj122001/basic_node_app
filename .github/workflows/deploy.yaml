@@ -44,5 +44,4 @@ jobs:
             cd basic_node_app/
             git pull origin main
             npm install
-            npm run build
             pm2 restart all
