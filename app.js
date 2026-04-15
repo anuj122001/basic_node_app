@@ -9,7 +9,7 @@ app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
     console.log("App is running...");
-    res.json({ status: "App is running again and again" });
+    res.json({ status: "App is running" });
 });
 
 app.get("/health", (req, res) => {
@@ -18,7 +18,7 @@ app.get("/health", (req, res) => {
 });
 
 app.get("/hello", (req, res) => {
-    console.log("Hello endpoint hit");
+    console.log("Hello Doston");
     console.log(`IP : ${req.headers["x-forwarded-for"] || req.socket.remoteAddress}`);
     res.json({ message: "Hello from server side" });
 });
