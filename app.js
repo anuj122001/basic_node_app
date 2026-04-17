@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 app.get("/health", (req, res) => {
     console.log("Health check hit");
-    res.json({ status: "ok but facing some problem" });
+    res.json({ status: "ok but facing" });
 });
 
 app.get("/hello", (req, res) => {
