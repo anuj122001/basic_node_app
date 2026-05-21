@@ -13,7 +13,7 @@ app.get("/", (req, res) => {
 });
 
 app.get("/health", (req, res) => {
-    console.log("Health check hit");
+    console.log("Health check done using github actions");
     res.json({ status: "ok " });
 });
 
