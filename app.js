@@ -9,7 +9,7 @@ app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
     console.log("App is running...");
-    res.json({ status: "Done with the pipeline setup" });
+    res.json({ status: "Done with the Github Actions" });
 });
 
 app.get("/health", (req, res) => {
