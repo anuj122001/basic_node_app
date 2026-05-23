@@ -9,12 +9,12 @@ app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
     console.log("App is running...");
-    res.json({ status: "Done with the Github Actions" });
+    res.json({ status: "Done with the Jenkins" });
 });
 
 app.get("/health", (req, res) => {
     console.log("ok");
-    res.json({ status: "Health check done using github actions" });
+    res.json({ status: "Health check done using Jenkins" });
 });
 
 app.get("/hello", (req, res) => {
